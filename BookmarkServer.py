@@ -148,6 +148,6 @@ class Shortener(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plainl charset=utf-8')
 
 if __name__ == '__main__':
-    server_address = ('', 8000)
+    server_address = ('', 80)
     httpd = http.server.HTTPServer(server_address, Shortener)
     httpd.serve_forever()
